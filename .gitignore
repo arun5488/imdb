@@ -1,0 +1,9 @@
+artifacts/
+*.log
+logs/
+*.pycache
+__pycache__/
+.env
+.venv/
+template.py
+*.ipynb
