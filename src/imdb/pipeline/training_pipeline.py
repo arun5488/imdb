@@ -26,12 +26,12 @@ class TrainingPipeline:
     def initiate_training_pipeline(self):
         try:
             logger.info("Inside initiate_training_pipeline method")
-            # logger.info("Initiating DataIngestion Stage")
-            # DataIngestionPipeline().initiate_data_ingestion_pipeline()
-            # logger.info("Data Ingestion Stage completed")
-            # logger.info("Initiating Data Transformation stage ")
-            # DataTransformationPipeline().initiate_data_transformation_pipeline()
-            # logger.info("Data Transformation stage completed")
+            logger.info("Initiating DataIngestion Stage")
+            DataIngestionPipeline().initiate_data_ingestion_pipeline()
+            logger.info("Data Ingestion Stage completed")
+            logger.info("Initiating Data Transformation stage ")
+            DataTransformationPipeline().initiate_data_transformation_pipeline()
+            logger.info("Data Transformation stage completed")
             logger.info("Initiating Model Trainer stage")
             ModelTrainerPipeline().initiate_model_trainer_pipeline()
             logger.info("Model Trainer stage completed")
