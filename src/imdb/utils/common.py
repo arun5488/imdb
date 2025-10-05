@@ -25,5 +25,15 @@ def create_directories(file_paths: list):
         logger.error(f"Error occured inside create_directories method:{e}")
         raise e
 
+def dataset_load_from_disk(filepath):
+    try:
+        logger.info("Inside dataset_load_from_disk")
+        local_dataset = load_from_disk(filepath)
+        logger.info(f"dataset loaded from {filepath}, data type is {type(local_dataset)}")
+        return local_dataset
+    except Exception as e:
+        logger.error(f"Error occured inside dataset_load_from_disk:{e}")
+        raise e
+
 
 

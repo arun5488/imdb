@@ -9,3 +9,4 @@ pyyaml
 dotenv
 hf_xet
 python-box
+scikit-learn

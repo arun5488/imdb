@@ -11,11 +11,13 @@ class DataTransformationConfig:
     root_dir: Path
     dataset: Path
     tokenizer_name: Path
-    local_tokenier: Path
+    local_tokenizer: Path
+    transformed_data: Path
 
 @dataclass
 class ModelTrainerConfig:
     root_dir: Path
     model_name: Path
     tokenizer: Path
-    
+    transformed_data: Path
+    local_model: Path
