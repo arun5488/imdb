@@ -57,7 +57,9 @@ class ModelTrainer:
                 compute_metrics=self.compute_metrics,
             )
 
-            trainer.train()                     
+            trainer.train()
+            final_model_path = f"{self.config.local_model}/final_model"
+            trainer.save_model(final_model_path)                    
         except Exception as e:
             logger.error(f"Error occured inside initiate_model_training method:{e}")
             raise e
