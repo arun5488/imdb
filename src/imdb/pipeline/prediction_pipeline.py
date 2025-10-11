@@ -38,6 +38,7 @@ class PredictionPipeline:
             classifier = pipeline(const.PIPELINE_TASK, model = model, tokenizer = tokenizer)
             result = classifier(text)
             logger.info(f"result: {result}")
+            return result
         except Exception as e:
             logger.error(f"error occured inside perform_classification:{e}")
             raise e

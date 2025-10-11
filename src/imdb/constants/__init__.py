@@ -17,3 +17,5 @@ AWS_S3_BUCKET= "bsaarun54.imdb"
 PIPELINE_TASK = "sentiment-analysis"
 FINAL_MODEL = "artifacts/model_trainer/model/final_model"
 TOKENIZER = "artifacts/data_transformation/tokenizer"
+
+FLASK_ENV = '.flaskenv'
